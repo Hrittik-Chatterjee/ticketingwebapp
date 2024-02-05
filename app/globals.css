@@ -48,7 +48,7 @@ body {
   input,
   select,
   textarea {
-    @apply m-1 rounded   p-1;
+    @apply m-1 rounded bg-slate-600  p-1;
   }
 }
 
@@ -57,6 +57,6 @@ body {
     @apply text-gray-300 text-xl;
   }
   .btn {
-    @apply hover:no-underline bg-blue-accent tracking-wider w-full text-center text-nav font-bold cursor-pointer uppercase px-4 py-2 rounded-md hover:bg-blue-accent-hover transition-colors block;
+    @apply hover:no-underline bg-blue-700 tracking-wider w-full text-center text-gray-300 font-bold cursor-pointer uppercase px-4 py-2 rounded-md hover:bg-blue-600 transition-colors block;
   }
 }

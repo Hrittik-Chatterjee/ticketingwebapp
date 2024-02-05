@@ -1,9 +1,12 @@
+import TicketForm from "@/app/(components)/TicketForm";
 import React from "react";
 
-const page = () => {
+const page = ({ params }) => {
   return (
     <div>
-      <h1> hello</h1>
+      <h1>
+        <TicketForm></TicketForm>
+      </h1>
     </div>
   );
 };
