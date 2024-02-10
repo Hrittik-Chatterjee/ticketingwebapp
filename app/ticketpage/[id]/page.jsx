@@ -3,9 +3,12 @@ import React from "react";
 
 const getTicketById = async (id) => {
   try {
-    const res = await fetch(`/app//api/Tickets/${id}`, {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      `https://ticketingwebapp.vercel.app/api/Tickets/${id}`,
+      {
+        cache: "no-store",
+      }
+    );
     if (!res.ok) {
       throw new Error("Failed to get ticket");
     }
