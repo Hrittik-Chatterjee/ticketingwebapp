@@ -6,7 +6,7 @@ import { FaX } from "react-icons/fa6";
 const DeleteBlock = ({ id }) => {
   const router = useRouter();
   const deleteTicket = async () => {
-    const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
+    const res = await fetch(`/app/api/Tickets/${id}`, {
       method: "DELETE",
     });
     if (res.ok) {
